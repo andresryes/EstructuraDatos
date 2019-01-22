@@ -10,7 +10,9 @@ public class Main{
         int numero = sc.nextInt();
 
         System.out.println(s.suma(numero, 1));
+        int n = sc.nextInt();
         sc.close();
+
     }
 
 }
