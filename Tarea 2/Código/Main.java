@@ -8,7 +8,8 @@ public class Main{
     public static void main(String args[]){
         Scanner s = new Scanner(System.in);
         int a = s.nextInt();
-        while(a!=1){
+        //Termina cuando el número es negativo
+        while(a>=0){
             stack = m.push(stack, a);   
             a = s.nextInt();         
         }
@@ -20,7 +21,8 @@ public class Main{
             System.out.println(stack[i]);
         }
 
-        m.clear();
+        m.clear(stack);
+        s.nextInt();
     }
 
     public void menu(){
