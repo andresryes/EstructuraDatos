@@ -24,7 +24,7 @@ public class Test {
     int length1 = uno.length;
     t.push(uno, 1);
     int length2 = uno.length;
-    assertTrue('it is a number', length2>length1);
+    assertTrue('element has been added an array changed size', length2>length1);
   }
   
   @Test
