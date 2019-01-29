@@ -37,5 +37,7 @@ public class Test {
     for(int i = 0; i < 100; i++){
         t.setStack(t.pop(t.getStack()));
     }
+    
+    assertTrue('list is empty', t.getStack().length == 0);
   }
 }
