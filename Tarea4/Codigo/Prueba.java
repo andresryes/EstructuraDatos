@@ -6,21 +6,21 @@ public class Prueba {
 	Main m = new Main();
 
    @Test
-   public void testSalutationMessage() {
+   public void esNegativo() {
       System.out.println("Inside testSalutationMessage()");
       message = "Hi!" + "Robert";
       assertEquals(message,messageUtil.salutationMessage());
    }
    
    @Test
-   public void testSalutationMessage() {
+   public void afueraDeLosLimites() {
       System.out.println("Inside testSalutationMessage()");
       message = "Hi!" + "Robert";
       assertEquals(message,messageUtil.salutationMessage());
    }
    
    @Test
-   public void testSalutationMessage() {
+   public void verificarCorrimiento() {
       System.out.println("Inside testSalutationMessage()");
       message = "Hi!" + "Robert";
       assertEquals(message,messageUtil.salutationMessage());
