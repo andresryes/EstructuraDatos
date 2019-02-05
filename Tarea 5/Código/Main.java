@@ -15,17 +15,17 @@ public class Main {
 
         int opcion = 1;
 
-        while (opcion != 0) {
+        while (opcion != 10) {
             System.out.println("1. Ingresar una compra");
             System.out.println("2. Ingresar un pago");
             System.out.println("3. Mostrar el total de Compras");
             System.out.println("4. Mostrar el total de Pagos");
             System.out.println("5. Mostrar saldo");
             System.out.println("6. Mostrar promedio items");
-            System.out.println("7. Debito mas grande");
-            System.out.println("8. Mostrar cuantas operaciones se tiene");
-            System.out.println("9. Imprimir los elementos de los arreglos");
-            System.out.println("10. Eliminar creditos y ejecutar metodos");
+            System.out.println("7. Producto mas caro");
+            System.out.println("8. Mostrar recibo de pago");
+            System.out.println("9. Eliminar pagos y ejecutar metodos");
+            System.out.println("10. Salir");
             System.out.print("Ingrese una opcion: ");
             opcion = sc.nextInt();
             switch (opcion) {
@@ -63,16 +63,23 @@ public class Main {
                     menu();
                     break;
                 case 8:
-
+                    cuenta.imprimirRecibo();
                     menu();
                     break;
                 case 9:
-
+                    cuenta.eliminarPago(2);
+                    cuenta.eliminarPago(4);
+                    System.out.println(cuenta.getTotalCompras());
+                    System.out.println(cuenta.getTotalPagos());
+                    System.out.println(cuenta.getSaldo());
+                    System.out.println(catalogo.promedioPrecios());
+                    System.out.println(catalogo.precioProductoMasCaro());
+                    cuenta.imprimirRecibo();
                     menu();
                     break;
-                case 10:
 
-                    menu();
+                case 10:
+                    System.out.println("Adios");
                     break;
             }
         }

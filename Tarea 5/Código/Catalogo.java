@@ -46,10 +46,10 @@ public class Catalogo {
             }
         }
 
-        if(masCaro.getPrecio()>catalogo[catalogo.length].getPrecio()){
+        if(masCaro.getPrecio()>catalogo[catalogo.length-1].getPrecio()){
             return  masCaro.getPrecio();
         }else{
-            return catalogo[catalogo.length].getPrecio();
+            return catalogo[catalogo.length-1].getPrecio();
         }
     }
 }

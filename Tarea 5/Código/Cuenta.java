@@ -29,6 +29,27 @@ public class Cuenta {
 
     }
 
+    public void eliminarPago(int posicion){
+        int conteo = 0;
+        for(int i = 0; i < getCantidad(); i++){
+            if(cuenta[i].getCategoria().equals("pago")){
+                conteo++;
+                if(conteo == posicion){
+                    correrArreglo(i);
+                    this.saldoPagos -= cuenta[i].getSuma();
+                }
+            }
+        }
+    }
+
+    public void correrArreglo(int posicion){
+        for(int i = posicion; i<getCantidad()-1; i++){
+            cuenta[i] = cuenta[i+1];
+        }
+        this.setCantidad(this.getCantidad()-1);
+        cuenta[getCantidad()-2] = cuenta[getCantidad()-1];
+    }
+
     public int getTotalCompras(){
         /*
         int total = 0;
@@ -50,7 +71,12 @@ public class Cuenta {
     }
 
     public void imprimirRecibo(){
-        System.out.println("Recibo de compra");
-
+        System.out.println("Recibo de pago");
+        for(int i = 0; i < getCantidad(); i++){
+            if(cuenta[i].getCategoria().equals("pago")){
+                System.out.println("Q."+ cuenta[i].getSuma());
+            }
+        }
+        System.out.println("Total: "+getTotalPagos());
     }
 }
