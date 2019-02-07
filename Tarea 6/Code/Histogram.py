@@ -29,7 +29,9 @@ finalHistogram = histogramFunction(stringArray, 10)
 #print(finalHistogram)
 
 for h in range(len(finalHistogram[0])):
-    print('"'+finalHistogram[2][h]+'"',end="")
+    print('"'+finalHistogram[2][h]+'" ',end="")
+    print(finalHistogram[1][h], end="")
+    print(": ", end="")
     for k in range(finalHistogram[1][h]):
         print("*",end="")
     print(" ")
