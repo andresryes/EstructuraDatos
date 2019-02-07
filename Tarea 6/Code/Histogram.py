@@ -33,3 +33,4 @@ for h in range(len(finalHistogram[0])):
     for k in range(finalHistogram[1][h]):
         print("*",end="")
     print(" ")
+input()
