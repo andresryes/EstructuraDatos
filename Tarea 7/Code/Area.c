@@ -34,7 +34,7 @@ float calculateArea(struct Shape figure)
     return floatToReturn;
 };
 
-void unitTest()
+void unitTestCircle()
 {
     int input = 1;
     struct Shape circleTest;
@@ -42,6 +42,39 @@ void unitTest()
 
     float resultTest = (calculateArea(circleTest));
     if(resultTest == 706.859985){
+        printf("correct");
+    }else{
+        printf("test fallido");
+    }
+}
+
+void unitTestRectangle()
+{
+    int input = 2;
+    struct Shape rectangleTest;
+    rectangleTest.area.figureID = input;
+    rectangleTest.size1 = 10;
+    rectangleTest.size2 = 20;
+    float resultTest = (calculateArea(rectangleTest));
+    rectangleTest.area.area = resultTest;
+    if(resultTest == 200){
+        printf("correct");
+    }else{
+        printf("test fallido");
+    }
+}
+
+void unitTestTriangle()
+{
+    int input = 3;
+    struct Shape triangleTest;
+    triangleTest.area.figureID = input;
+    triangleTest.size1 = 10;
+    triangleTest.size2 = 10;
+    triangle.size3 = 10;
+    float resultTest = (calculateArea(triangleTest));
+    triangleTest.area.area = resultTest;
+    if(resultTest == 43.3){
         printf("correct");
     }else{
         printf("test fallido");
