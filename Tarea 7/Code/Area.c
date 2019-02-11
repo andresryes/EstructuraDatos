@@ -34,6 +34,6 @@ int main(void)
     circle1.radio = 1;
     printf("Area : %lf\n", calculateArea(circle1));
     int a;
-    scanf("%d", &a);*/
+    scanf("%d", &a);
     return 0;
 }

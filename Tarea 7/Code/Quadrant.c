@@ -52,8 +52,8 @@ int main(void)
 
     printf("Quadrant : %d\n", determineQuadrant(point));
     //unitTest();
-    //int a;
-    //scanf("%d", &a);
+    int a;
+    scanf("%d", &a);
 
     return 0;
 }
