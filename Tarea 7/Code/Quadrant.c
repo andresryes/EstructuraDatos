@@ -9,14 +9,14 @@ struct Point {
 int determineQuadrant(struct Point point)
 {
     int intToReturn = 0;
-    if(point.x>0){
-        if(point.y>0){
+    if(point.x>=0){
+        if(point.y>=0){
             intToReturn = 1;
         }else{
             intToReturn = 4;
         }
     }else{
-        if(point.y>0){
+        if(point.y>=0){
             intToReturn = 2;
         }else{
             intToReturn = 3;
