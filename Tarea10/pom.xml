@@ -7,6 +7,14 @@
     <groupId>tarea10</groupId>
     <artifactId>ufm.datos</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>

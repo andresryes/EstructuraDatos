@@ -16,18 +16,6 @@ public class ExpressionTree {
         this.postfix = postfix;
     }
 
-    private static class TreeNode {
-        TreeNode left;
-        char ch;
-        TreeNode right;
-
-        TreeNode(TreeNode left, char ch, TreeNode right) {
-            this.left = left;
-            this.ch = ch;
-            this.right = right;
-        }
-    }
-
 
     private boolean isOperator(char c) {
         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^';
@@ -103,5 +91,9 @@ public class ExpressionTree {
         expressionTree1.createExpressionTree();
         System.out.println(expressionTree1.infix());
     }*/
+
+    public TreeNode getExpressionTree(){
+        return root;
+    }
 }
 
