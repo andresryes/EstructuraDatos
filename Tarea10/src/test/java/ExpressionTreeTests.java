@@ -15,8 +15,10 @@ public class ExpressionTreeTests {
     }
 
     @Test(dataProvider = "isOperator", groups = {"All", "ExpressionTree"}, description = "Test isOperator(): Ve si el input es operador")
-    public void check_if_constant(char maybe_operator){
-
+    public void verifyTree(char maybe_operator){
+        ExpressionTree expressionTree = new ExpressionTree("3x2^*");
+        expressionTree.createExpressionTree();
+        Assert.assertEquals("((3)*((x)^(2)))",expressionTree.infix());
     }
 
 }

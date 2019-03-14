@@ -12,6 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         //String function = "3*x^2*(x^2+1)^3+(e^(2*x))";
         String function = "3*x^5+3*x^3+x+1+2*x+3*x^5+3^x+e^(2*x)+e^x";
+        //String function = "3*x^2";
         if(verifyString.checkParentheses(function)){
             System.out.println("you can continue");
             System.out.println("function: " + function);
