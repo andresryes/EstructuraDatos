@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class DerivativeTests {
 
-    @DataProvider(name = "check_if_constant", parallel = true)
+    @DataProvider(name = "verify_constant", parallel = true)
     public Object[][] check_if_constant(){
         return new Object[][]{
                 {'a'},
@@ -15,7 +15,7 @@ public class DerivativeTests {
         };
     }
 
-    @Test(dataProvider = "check_if_constant", groups = {"All", "Differentiate"}, description = "Test check_if_constant(): Ve si el input es constante")
+    @Test(dataProvider = "check_if_constant", groups = {"All"}, description = "input es constante")
     public void check_if_constant(char tree_value){
        // Differentiate diff = new Differentiate();
        // Assert.assertTrue(diff.check_if_constant(tree_value));
@@ -38,7 +38,7 @@ public class DerivativeTests {
      //   Assert.assertTrue(diff.isNumeric(maybe_number));
     }
 
-    @DataProvider(name = "restar_exp",parallel = true)
+    @DataProvider(name = "restar_",parallel = true)
     public Object[][] restar_exp(){
         return new Object[][]{
                 {"B"},

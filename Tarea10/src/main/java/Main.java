@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Hello World!");
         Scanner scanner = new Scanner(System.in);
         //String function = "3*x^2*(x^2+1)^3+(e^(2*x))";
-        String function = "3*x^5+3*x^3+x+1+2*x+3*x^5";
+        String function = "3*x^5+3*x^3+x+1+2*x+3*x^5+3^x+e^(2*x)+e^x";
         if(verifyString.checkParentheses(function)){
             System.out.println("you can continue");
             System.out.println("function: " + function);
@@ -25,6 +25,8 @@ public class Main {
             Derivative derivative = new Derivative();
             derivative.derivative(expressionTree.getExpressionTree());
             System.out.println("derivative: "+ derivative.derivative);
+
+            String wait = scanner.next();
         }
     }
 }

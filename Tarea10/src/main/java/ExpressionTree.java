@@ -4,12 +4,6 @@ public class ExpressionTree {
     private final String postfix;
     private TreeNode root;
 
-    /**
-     * Takes in a valid postfix expression and later its used to construct the expression tree.
-     * The posfix expression, if invalid, leads to invalid results
-     *
-     * @param postfix   the postfix expression.
-     */
     public ExpressionTree(String postfix) {
         if (postfix == null) { throw new NullPointerException("The posfix should not be null"); }
         if (postfix.length() == 0)  { throw new IllegalArgumentException("The postfix should not be empty"); }
@@ -17,14 +11,12 @@ public class ExpressionTree {
     }
 
 
+    //check if the char is an operator
     private boolean isOperator(char c) {
         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^';
     }
 
-
-    /**
-     * Constructs an expression tree, using the postfix expression
-     */
+    //create the tree, with the postfix expression
     public void createExpressionTree() {
         final Stack<TreeNode> nodes = new Stack<TreeNode>();
         for (int i = 0; i < postfix.length(); i++) {
@@ -40,33 +32,6 @@ public class ExpressionTree {
         root = nodes.pop();
     }
 
-    /**
-     * Returns the prefix notation
-     *
-     * @return the prefix notation
-     */
-    /*public String prefix() {
-        if (root == null) {
-            throw new NoSuchElementException("The root is empty, the tree has not yet been constructed.");
-        }
-
-        final StringBuilder prefix = new StringBuilder();
-        preOrder(root, prefix);
-        return prefix.toString();
-    }
-
-    private void preOrder(TreeNode node, StringBuilder prefix) {
-        if (node != null) {
-            prefix.append(node.ch);
-            preOrder(node.left, prefix);
-            preOrder(node.right, prefix);
-        }
-    }
-    /**
-     * Returns the infix expression
-     *
-     * @return  the string of infix.
-     */
     public String infix() {
         if (root == null) {
             throw new NoSuchElementException("The root is empty, the tree has not yet been constructed.");
@@ -76,6 +41,7 @@ public class ExpressionTree {
         return infix.toString();
     }
 
+    //make the String with parenthesis in infix notation
     private void inOrder(TreeNode node, StringBuilder infix) {
         if (node != null) {
             infix.append("(");
@@ -85,12 +51,6 @@ public class ExpressionTree {
             infix.append(")");
         }
     }
-
-    /*public static void main(String[] args) {
-        ExpressionTree expressionTree1 = new ExpressionTree("3x2^*x2^1+3^*e2^x*+");
-        expressionTree1.createExpressionTree();
-        System.out.println(expressionTree1.infix());
-    }*/
 
     public TreeNode getExpressionTree(){
         return root;

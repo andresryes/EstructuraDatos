@@ -1,13 +1,9 @@
-
-/* Java implementation to convert infix expression to postfix*/
-// Note that here we use Stack class for Stack operations
-
 import java.util.Stack;
 
 class InfixToPostfix
 {
-    // A utility function to return precedence of a given operator
-    // Higher returned value means higher precedence
+
+    // return precedence of a char, higher == more precedence
     static int Prec(char ch)
     {
         switch (ch)
@@ -26,21 +22,20 @@ class InfixToPostfix
         return -1;
     }
 
-    // The main method that converts given infix expression
-    // to postfix expression.
+    // infix to postfix expression using Shunting yard
     static String infixToPostfix(String exp)
     {
-        // initializing empty String for result
+        // result
         String result = new String("");
 
-        // initializing empty stack
+        // stack
         Stack<Character> stack = new Stack<Character>();
 
         for (int i = 0; i<exp.length(); ++i)
         {
             char c = exp.charAt(i);
 
-            // If the scanned character is an operand, add it to output.
+            // operand goes to the output
             if (Character.isLetterOrDigit(c))
                 result += c;
 
@@ -75,13 +70,6 @@ class InfixToPostfix
 
         return result;
     }
-
-    // Driver method
-    /*public static void main(String[] args)
-    {
-        String exp = "3*x^2*(x^2+1)^3+(e^2)*x";
-        System.out.println(infixToPostfix(exp));
-    }*/
 
     public static String getPostFix(String infix){
         return infixToPostfix(infix);

@@ -80,11 +80,23 @@ public class Derivative {
                 case '^':
                     //derivative = derivative +"+"+node.right.ch+"^"+(node.left.ch-1);
 
-                    System.out.println("R"+node.right.ch);
-                    System.out.println("L"+node.left.ch);
+                   // System.out.println("R"+node.right.ch);
+                   // System.out.println("L"+node.left.ch);
                     //derivative+= "(" + node.left.ch + "*" + node.right.right.ch + ")" + "*" + node.right.left.ch + "^" + (Integer.parseInt(node.right.right.ch+"")-1);
                     if(!Character.isDigit(node.left.ch)){
-                        derivative+= "+(" + node.right.ch + ")" + "*" + node.left.ch + "^" + (Integer.parseInt(node.right.ch+"")-1);
+                        if(node.left.ch == 'e'){
+                            if(node.right.ch == 'x'){
+                                derivative+= "+"+node.left.ch+"^"+node.right.ch;
+                            }else if(node.right.ch == '*'){
+                                derivative+= "+("+node.right.left.ch+")"+"("+node.left.ch+")^("+node.right.right.ch+"*"+node.right.left.ch+")";
+                            }
+                        }else{
+                            derivative+= "+(" + node.right.ch + ")" + "*" + node.left.ch + "^" + (Integer.parseInt(node.right.ch+"")-1);
+                        }
+                    }else{
+                        if(node.right.ch == 'x'){
+                            derivative+="+"+"log("+node.left.ch+")"+"*"+node.left.ch+"^x";
+                        }
                     }
                     break;
                 default:
