@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example" preserve-order="true" allow-return-values="true" verbose="1">
+    <test name="Example">
+        <groups>
+            <run>
+                <include name="All" />
+
+            </run>
+        </groups>
+        <classes>
+            <class name="BTreeTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="listeners.ListenersTest"/>
+        <listener class-name="listeners.ListenerSuite"/>
+    </listeners>
+</suite>

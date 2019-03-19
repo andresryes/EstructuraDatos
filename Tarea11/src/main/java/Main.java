@@ -2,7 +2,6 @@ import org.apache.commons.lang.time.StopWatch;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -23,7 +22,7 @@ public class Main{
       Scanner st = new Scanner(System.in);
 
         StopWatch stopWatch = new StopWatch();
-        String key = "periglottis";
+        String key = "zwitterionic";
 
         System.out.println("---------------------------------");
         //search in the tree
@@ -53,7 +52,7 @@ public class Main{
         Instant ends1 = Instant.now();
         stopWatch.stop();
         System.out.println("Time: " + Duration.between(starts1, ends1));
-
+        st.next();
 
     }
 
