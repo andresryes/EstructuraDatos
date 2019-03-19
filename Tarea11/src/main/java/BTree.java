@@ -91,8 +91,27 @@ public class BTree{
       }
   }
 
-  public boolean search(){
-    return false;
+  public boolean search(Node node, String value){
+      int i = 1;
+      while(i<=node.numberOfNodes && value.compareTo(node.key[i-1])>0){
+        i++;
+      }
+
+      if(i<= node.numberOfNodes && value.equals(node.key[i-1])){
+        return true;
+      }
+
+      if(!node.isLeaf){
+          return search(node.children[i-1], value);
+      }
+
+      return false;
+  }
+
+  public boolean search(String value){
+    Node node = root;
+
+    return search(root, value);
   }
 
   public void print(){
