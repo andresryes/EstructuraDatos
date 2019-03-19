@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0022f997-6948-4af1-b779-12787d5598ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DerivativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DerivativeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExpressionTreeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExpressionTreeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InfixToPostfixTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InfixToPostfixTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="360">
               <caret line="26" column="33" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DerivativeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="90">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ExpressionTreeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="21" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,13 +66,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ExpressionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="765">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/InfixToPostfixTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -117,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/InfixToPostfix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
+            <state relative-caret-position="1080">
               <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
@@ -206,18 +203,26 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Tarea10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tarea10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552587266243" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552587509626" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -237,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/andres/Documents/EstructuraDatos/Tarea10/testng.xml">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ufm.datos" />
@@ -257,8 +262,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG./home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +279,8 @@
       <updated>1552565561616</updated>
       <workItem from="1552565567138" duration="1605000" />
       <workItem from="1552568782515" duration="8985000" />
-      <workItem from="1552578467897" duration="1384000" />
+      <workItem from="1552578467897" duration="2183000" />
+      <workItem from="1552957069667" duration="50000" />
     </task>
     <servers />
   </component>
@@ -282,15 +288,26 @@
     <history-entry file="_home_andres_Documents_EstructuraDatos_Tarea10_testng_xml - 2019.03.14 at 07h 22m 31s.xml">
       <configuration name="/home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_home_andres_Documents_EstructuraDatos_Tarea10_testng_xml - 2019.03.14 at 12h 12m 21s.xml">
+      <configuration name="/home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_andres_Documents_EstructuraDatos_Tarea10_testng_xml - 2019.03.14 at 12h 12m 43s.xml">
+      <configuration name="/home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_andres_Documents_EstructuraDatos_Tarea10_testng_xml - 2019.03.14 at 12h 13m 18s.xml">
+      <configuration name="/home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_andres_Documents_EstructuraDatos_Tarea10_testng_xml - 2019.03.14 at 12h 14m 07s.xml">
+      <configuration name="/home/andres/Documents/EstructuraDatos/Tarea10/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11974000" />
+    <option name="totallyTimeSpent" value="12823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="308" y="0" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25701624" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26070902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,7 +316,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298611" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298611" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -421,6 +438,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DerivativeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Derivative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#123#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ExpressionTreeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExpressionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Power.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -444,7 +509,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/InfixToPostfix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="1080">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
@@ -453,54 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExpressionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ExpressionTreeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Derivative.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="e#89#90#0" expanded="true" />
-            <element signature="e#123#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DerivativeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
