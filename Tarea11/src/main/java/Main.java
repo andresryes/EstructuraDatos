@@ -24,6 +24,7 @@ public class Main{
         StopWatch stopWatch = new StopWatch();
         String key = "zwitterionic";
 
+        //System.out.println("luis".compareTo("luisa"));
         System.out.println("---------------------------------");
         //search in the tree
         Instant starts = Instant.now();
