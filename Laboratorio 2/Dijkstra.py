@@ -66,6 +66,7 @@ class Graph:
         return neighbours
 
     def dijkstra(self, source, dest):
+        
         assert source in self.vertices, 'Such source node doesn\'t exist'
         distances = {vertex: inf for vertex in self.vertices}
         previous_vertices = {
@@ -95,11 +96,11 @@ class Graph:
         return path
 
 graph = Graph([
-    ("DOL", "CNY", 6.72),  ("EUR", "DOL", 1.12),  ("QUE", "DOL", 0.13), ("QUE", "VES", 4.28),
-    ("EUR", "VES", 3694.16), ("c", "d", 11), ("c", "f", 2),  ("d", "e", 6),
+    ("a", "b", 7),  ("a", "c", 9),  ("a", "f", 14), ("b", "c", 10),
+    ("b", "d", 15), ("c", "d", 11), ("c", "f", 2),  ("d", "e", 6),
     ("e", "f", 9)])
 
-print(graph.dijkstra("a", "e"))
+print(graph.dijkstra("b", "f"))
 
 
 # In[ ]:
