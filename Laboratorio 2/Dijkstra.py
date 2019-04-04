@@ -94,10 +94,9 @@ class Graph:
             path.appendleft(current_vertex)
         return path
 
-
 graph = Graph([
-    ("a", "b", 7),  ("a", "c", 9),  ("a", "f", 14), ("b", "c", 10),
-    ("b", "d", 15), ("c", "d", 11), ("c", "f", 2),  ("d", "e", 6),
+    ("DOL", "CNY", 6.72),  ("EUR", "DOL", 1.12),  ("QUE", "DOL", 0.13), ("QUE", "VES", 4.28),
+    ("EUR", "VES", 3694.16), ("c", "d", 11), ("c", "f", 2),  ("d", "e", 6),
     ("e", "f", 9)])
 
 print(graph.dijkstra("a", "e"))
