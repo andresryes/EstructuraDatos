@@ -65,8 +65,46 @@ class Graph:
 
         return neighbours
 
+    def get_exchange(self, source, dest):
+        costs = deque()
+        assert source in self.vertices, 'Such source node doesn\'t exist'
+        distances = {vertex: inf for vertex in self.vertices}
+        previous_vertices = {
+            vertex: None for vertex in self.vertices
+        }
+        distances[source] = 0
+        vertices = self.vertices.copy()
+
+        while vertices:
+            current_vertex = min(
+                vertices, key=lambda vertex: distances[vertex])
+            vertices.remove(current_vertex)
+            if distances[current_vertex] == inf:
+                break
+            for neighbour, cost in self.neighbours[current_vertex]:
+                #costs.appendleft(str(cost))
+                alternative_route = 0              
+                if(distances[current_vertex]!=0):
+                    alternative_route = distances[current_vertex] * cost
+                else:
+                    alternative_route = distances[current_vertex] + cost; 
+                if alternative_route < distances[neighbour]:
+                    distances[neighbour] = alternative_route
+                    previous_vertices[neighbour] = current_vertex          
+
+        path, current_vertex = deque(), dest
+        while previous_vertices[current_vertex] is not None:
+            path.appendleft(current_vertex)
+            costs.appendleft(distances[current_vertex])
+            current_vertex = previous_vertices[current_vertex]
+        if path:
+            path.appendleft(current_vertex)
+            costs.appendleft(distances[current_vertex])
+
+        return costs
+
     def dijkstra(self, source, dest):
-        
+
         assert source in self.vertices, 'Such source node doesn\'t exist'
         distances = {vertex: inf for vertex in self.vertices}
         previous_vertices = {
@@ -96,11 +134,13 @@ class Graph:
         return path
 
 graph = Graph([
-    ("a", "b", 7),  ("a", "c", 9),  ("a", "f", 14), ("b", "c", 10),
-    ("b", "d", 15), ("c", "d", 11), ("c", "f", 2),  ("d", "e", 6),
-    ("e", "f", 9)])
+    ("USD", "CNY", 6.71),  ("EUR", "USD", 1.12),  ("QUE", "USD", 0.13), ("QUE", "VES", 428),
+    ("EUR", "VES", 3694.16), ("ARS", "MXN", 0.44), ("ZWD", "MXN", 0.052),  ("CHF", "MXN", 19.61),
+    ("CHF", "USD", 0.99), ("USD", "QUE", 7.7)])
 
-print(graph.dijkstra("b", "f"))
+print(graph.dijkstra("EUR", "VES"))
+
+print(graph.get_exchange("EUR", "VES"))
 
 
 # In[ ]:
