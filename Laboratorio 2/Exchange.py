@@ -9,9 +9,9 @@ def exchange_rate():
         ("EUR", "VES", 3694.16), ("ARS", "MXN", 0.44), ("ZWD", "MXN", 0.052),  ("CHF", "MXN", 19.61),
         ("CHF", "USD", 0.99), ("USD", "QUE", 7.7)])
 
-    print(graph.dijkstra("EUR", "VES"))
-    print(graph.get_exchange("EUR", "VES"))
-    print("Exchange rate: " + str((graph.get_exchange("EUR", "VES")[-1])))
+    print(graph.dijkstra("EUR", "CNY"))
+    print(graph.get_exchange("EUR", "CNY"))
+    print("Exchange rate: " + str((graph.get_exchange("EUR", "CNY")[-1])))
 
 if __name__ == '__main__':
     exchange_rate()
