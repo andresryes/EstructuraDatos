@@ -7,15 +7,19 @@ import random
 hash_table = [[] for _ in range(20)]
 print (hash_table) 
 
-def hashing_func(key):
-    return math.floor(math.pow(math.log(key), 2)) % len(hash_table)
+def hashing_func(key, value):
+    new_key = 0
+    for s in value:
+        new_key+=ord(s)
+
+    return math.floor(math.pow(math.log(key+new_key), 2)) % len(hash_table)
 
 #print (hashing_func(4564)) 
 #print (hashing_func(546)) 
 #print (hashing_func(78547))
 
 def insert(hash_table, key, value):
-    hash_key = hashing_func(key)
+    hash_key = hashing_func(key, value)
     key_exists = False
     bucket = hash_table[hash_key]    
     for i, kv in enumerate(bucket):
@@ -36,7 +40,7 @@ def search(hash_table, key):
         if key == k:
             return v
 
-for x in range(20):
+for x in range(6):
     insert(hash_table, random.randint(1, 20000), 'Saturno'+str(x))
     #print (hash_table)
     
